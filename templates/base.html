@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Irving Dev | La Mejor Plataforma De Venta De Productos</title>
+
+    <link href="{% static 'images/favicon.icon' %}" rel="shortcut icon" type="image/x-icon">
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
+
+    <!-- Bootstrap4 Files-->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" />
+
+    <!-- Font Awesome 5 -->
+    <link href="{% static 'fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
+
+    <!-- Custom Style -->
+    <link href="{% static 'css/ui.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" media="only screen and (max-width: 1200px)" />
+
+    <!-- Custom JavaScript -->
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        /// Some Script
+
+        // jQuery Ready Start
+        $(document).ready(function () {
+            // jQuery Code
+
+        });
+// jQuery End
+    </script>
+
+</head>
+
+<body>
+    {% include 'includes/navbar.html' %}
+
+    {% block content %}
+    
+    {% endblock %}
+
+    {% include 'includes/footer.html' %}
