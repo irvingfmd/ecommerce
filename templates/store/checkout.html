@@ -15,7 +15,7 @@
                         <h4 class="card-title mb-4">
                             Dirección de facturación
                         </h4>
-                        <form class="" action="" method="POST">
+                        <form class="" action="{% url 'place_order' %}" method="POST">
                             {% csrf_token %}
                             <div class="form-row">
                                 <div class="col form-group">
